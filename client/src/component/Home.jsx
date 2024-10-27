@@ -21,7 +21,7 @@ const Home = () => {
  
     useEffect(() => {
       const fetchData = async () => {
-        const response = await axios("http://localhost:9000", {
+        const response = await axios("https://task31-roan.vercel.app/", {
           headers:{
             "Content-Type": "application/json",
             token: localStorage.getItem("token")

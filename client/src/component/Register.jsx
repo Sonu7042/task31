@@ -17,7 +17,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      const response = await axios.post("http://localhost:9000/register", user);
+      const response = await axios.post("https://task31-roan.vercel.app/register", user);
       console.log(response);
       setUser({ username: "", password: "" });
   
